@@ -5,7 +5,7 @@
  # @Github       : https://github.com/jsmjsm
  # @Date         : 2021-07-13 13:43:11
  # @LastEditors  : jsmjsm
- # @LastEditTime : 2021-07-16 17:49:25
+ # @LastEditTime : 2022-05-20 03:44:03
  # @FilePath     : /BrewMyMac/backup.sh
 ###
 
@@ -16,12 +16,12 @@ export git=/usr/bin/git
 
 # > Install Homebrew
 install_homebrew(){
-    if `command -v brew > /dev/null 2>&1`; then
+    if [ `command -v brew` ]; then
         echo '👌 Homebrew 已安装'
     else
         echo '🍺 正在安装 Homebrew... (link to Homebrew: https://brew.sh/)'
         # install script:
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         if [ $? -ne 0 ]; then
             echo '🍻 Homebrew 安装成功'
         else
