@@ -112,6 +112,7 @@ pillow
 pixman
 pkg-config
 pngquant
+pnpm
 protobuf
 pybind11
 pyenv
@@ -146,6 +147,7 @@ x265
 xorgproto
 xvid
 xz
+yarn
 zeromq
 zimg
 zlib
