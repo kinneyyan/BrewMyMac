@@ -95,6 +95,7 @@ mysql
 ncurses
 nettle
 node
+nvm
 ocrmypdf
 oniguruma
 opencore-amr
